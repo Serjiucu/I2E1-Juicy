@@ -3,6 +3,8 @@ body{
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height : 100%;
+    min-height : 100%;
 }
 
 header{
@@ -80,15 +82,7 @@ div{
     list-style: none;
 }
 
-ul{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
+
 
 li{
     float:right;
@@ -117,13 +111,15 @@ a{
 footer{
     width: 100%;
     background-color: rgb(231, 231, 231);
+    bottom : 0px;
+    posotion : relative;
+    clear : both;
 }
 .footer_section{
     width: 100%;
     display: flex;
     margin: 1%;
     padding: 1%;
-    flex-direction: line;  
     justify-content: center; 
     align-items: center;
 }
@@ -134,13 +130,11 @@ footer{
 
 .footer_article a{
     color: black;
-    display: text;
     /* text-decoration: underline; */
     /* all: initial; */
 }
 
 #a_footer:hover{
-    all: initial;
     text-decoration: underline;
     cursor: pointer;
 
